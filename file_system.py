@@ -17,7 +17,7 @@ def traverseFolder(dir, level):
         else:
             output_string.append(separator_folder * (level - 1) + separator_file + file)
 
-traverseFolder('D:\\DMI\\Learning\\', 0)
+traverseFolder('<File Location>', 0)
 
 with open('File_Structure.txt', 'wb') as file_structure:
     file_structure.write('\n'.join(output_string).encode())
